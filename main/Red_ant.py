@@ -1,5 +1,6 @@
 import pyttsx3 #pip install pyttsx3
 import speech_recognition as sr #pip install speechRecognition
+import spyder
 import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
@@ -9,7 +10,7 @@ import smtplib
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[1].id)
-engine.setProperty('voice', voices[0].id)
+engine.setProperty('voice', voices[1].id)
 
 
 def speak(audio):
@@ -28,7 +29,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")
+    speak("I am Red Ant. How may I assist you today")
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
